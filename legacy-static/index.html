@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Panda Scoops - Cinematic Ice Cream</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="loader" class="loader">
+    <div class="loader-inner">
+      <div class="loader-brand">PANDA SCOOPS</div>
+      <div class="loader-bar">
+        <div class="loader-bar-fill" id="loaderBar"></div>
+      </div>
+      <div class="loader-percent" id="loaderPercent">Loading 0%</div>
+    </div>
+  </div>
+
+  <header class="nav" id="nav">
+    <div class="brand">PANDA SCOOPS</div>
+    <nav class="nav-links">
+      <a href="#product" data-section="product">Product</a>
+      <a href="#ingredients" data-section="ingredients">Ingredients</a>
+      <a href="#nutrition" data-section="nutrition">Nutrition</a>
+      <a href="#reviews" data-section="reviews">Reviews</a>
+      <a href="#faq" data-section="faq">FAQ</a>
+      <a href="#contact" data-section="contact">Contact</a>
+    </nav>
+    <div class="nav-controls">
+      <button id="modeToggle" class="mode-toggle" aria-label="Toggle dark or light mode">
+        <span class="mode-dot"></span>
+        <span class="mode-text">Dark</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-scroll" id="heroScroll">
+      <div class="hero" id="hero">
+        <img class="hero-bg" id="heroBg" alt="Panda Scoops background" />
+        <div class="hero-overlay">
+          <div class="hero-left">
+            <div class="hero-logo">PANDA SCOOPS</div>
+            <div class="hero-text" id="heroText">
+              <div class="hero-title" id="itemName">PANDA</div>
+              <div class="hero-subtitle" id="itemSubtitle">PANDA SCOOPS</div>
+              <p class="hero-desc" id="itemDesc">
+                A modern take on a classic ice cream with a perfect blend of sweet and tart, full of nostalgic flavor.
+              </p>
+            </div>
+            <div class="hero-cta">
+              <button class="cta ghost" id="orderNow">ORDER NOW</button>
+              <button class="cta outline">VIEW MENU</button>
+            </div>
+          </div>
+
+          <div class="hero-center"></div>
+
+          <div class="hero-right">
+            <div class="hero-index" id="heroIndex">01</div>
+            <div class="hero-nav">
+              <button class="hero-nav-btn" id="prevBtn">
+                <span class="hero-nav-label">PREV</span>
+                <span class="hero-nav-arrow">?</span>
+              </button>
+              <div class="hero-nav-line"></div>
+              <button class="hero-nav-btn" id="nextBtn">
+                <span class="hero-nav-label">NEXT</span>
+                <span class="hero-nav-arrow">?</span>
+              </button>
+              <div class="hero-nav-loading" id="variantLoading">Loading...</div>
+            </div>
+          </div>
+
+          <div class="hero-social">
+            <a aria-label="Twitter" href="#">X</a>
+            <a aria-label="Instagram" href="#">IG</a>
+            <a aria-label="Facebook" href="#">FB</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="product">
+      <div class="section-inner">
+        <h2>Product</h2>
+        <p class="lead">A modern ice cream brand inspired by classic flavors but made with better ingredients.</p>
+        <div class="two-col">
+          <div>
+            <p>
+              Panda Scoops pairs bold nostalgia with cleaner recipes: real fruit, honest dairy, and a texture that melts
+              slow and clean. Every scoop is balanced for sweetness, creaminess, and a fresh finish.
+            </p>
+            <div class="tag-list">
+              <span>Handcrafted</span>
+              <span>Small-batch</span>
+              <span>Better Ingredients</span>
+            </div>
+          </div>
+          <div class="cta-card">
+            <div class="cta-image" role="img" aria-label="Stylized ice cream product art">
+              <svg viewBox="0 0 300 300" aria-hidden="true">
+                <defs>
+                  <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+                    <stop offset="0" stop-color="#5b2a86"/>
+                    <stop offset="1" stop-color="#8f3bd9"/>
+                  </linearGradient>
+                  <linearGradient id="can" x1="0" x2="0" y1="0" y2="1">
+                    <stop offset="0" stop-color="#f2f2f2"/>
+                    <stop offset="1" stop-color="#cfcfcf"/>
+                  </linearGradient>
+                </defs>
+                <rect width="300" height="300" fill="url(#bg)" />
+                <ellipse cx="150" cy="250" rx="90" ry="20" fill="#000" opacity="0.25" />
+                <rect x="115" y="70" width="70" height="150" rx="14" fill="url(#can)" />
+                <rect x="118" y="90" width="64" height="80" rx="10" fill="#5b2a86" opacity="0.55" />
+                <circle cx="90" cy="230" r="16" fill="#6b2dd9" />
+                <circle cx="120" cy="240" r="18" fill="#7a31ee" />
+                <circle cx="150" cy="235" r="20" fill="#5b2a86" />
+                <circle cx="180" cy="240" r="18" fill="#7a31ee" />
+                <circle cx="210" cy="230" r="16" fill="#6b2dd9" />
+              </svg>
+            </div>
+            <div class="cta-copy">
+              <h3>Signature Scoop</h3>
+              <p>Clean, bold, and cinematic. Designed to pop in dark mode with a crisp studio glow.</p>
+              <button class="cta solid">Order the Scoop</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="ingredients">
+      <div class="section-inner">
+        <h2>Ingredients & Benefits</h2>
+        <div class="two-col">
+          <ul class="list">
+            <li>Real fruit purees and whole milk cream.</li>
+            <li>Low additive, high flavor recipes.</li>
+            <li>Seasonal rotations inspired by classic desserts.</li>
+          </ul>
+          <div class="benefits">
+            <div class="benefit-card">
+              <h4>Clean Finish</h4>
+              <p>Balanced sweetness that lets flavors linger without heaviness.</p>
+            </div>
+            <div class="benefit-card">
+              <h4>Crafted Daily</h4>
+              <p>Small-batch production keeps texture creamy and fresh.</p>
+            </div>
+            <div class="benefit-card">
+              <h4>Modern Classics</h4>
+              <p>Beloved flavors, elevated with better sourcing.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="nutrition">
+      <div class="section-inner">
+        <h2>Nutrition Facts</h2>
+        <div class="nutrition-card">
+          <div class="nutrition-title">Nutrition Facts</div>
+          <div class="nutrition-row">Serving Size <span>1 Scoop (120g)</span></div>
+          <div class="nutrition-row">Calories <span>210</span></div>
+          <div class="nutrition-row">Total Fat <span>9g</span></div>
+          <div class="nutrition-row">Total Carbs <span>28g</span></div>
+          <div class="nutrition-row">Protein <span>4g</span></div>
+          <div class="nutrition-foot">*Values are estimates for display.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="reviews">
+      <div class="section-inner">
+        <h2>Reviews</h2>
+        <div class="reviews">
+          <div class="review-card">
+            <div class="review-score">4.8</div>
+            <p>"Great place for a quick ice cream treat. The location is very convenient."</p>
+            <span>Justdial</span>
+          </div>
+          <div class="review-card">
+            <div class="review-score">4.8</div>
+            <p>"Ordered mango, jackfruit and chocolate all tasted soo good at reasonable price."</p>
+            <span>Google Maps</span>
+          </div>
+          <div class="review-card">
+            <div class="review-score">5.0</div>
+            <p>"Our viral sundae isn?t just a trend; it?s a masterpiece."</p>
+            <span>Instagram</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="section-inner">
+        <h2>FAQ</h2>
+        <div class="accordion">
+          <div class="accordion-item">
+            <button class="accordion-trigger">What are your hours?</button>
+            <div class="accordion-panel">Monday - Sunday: 12 PM ? 1 AM</div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-trigger">Where are you located?</button>
+            <div class="accordion-panel">01, Sajjan Rao Cir, opp. V. B. Bakery, Vishweshwarapura, Basavanagudi, Bengaluru.</div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-trigger">Do you have seasonal flavors?</button>
+            <div class="accordion-panel">Yes. We rotate limited batches inspired by classic desserts and local fruit.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="section-inner">
+        <div class="final-cta">
+          <h2>Make Tonight a Scoops Night</h2>
+          <p>Drop by VV Puram Food Street or order ahead. Bright flavors, bold texture, and a perfect scoop every time.</p>
+          <div class="cta-row">
+            <button class="cta solid">Order Now</button>
+            <button class="cta outline">Call +91 96207 92807</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">PANDA SCOOPS</div>
+      <div class="footer-links">
+        <a href="#product">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms</a>
+      </div>
+      <div class="footer-social">
+        <a href="#">X</a>
+        <a href="#">IG</a>
+        <a href="#">FB</a>
+      </div>
+      <div class="footer-copy">? 2026 Panda Scoops. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

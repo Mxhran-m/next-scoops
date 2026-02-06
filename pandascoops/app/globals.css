@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+  --bg: #0b0b0f;
+  --bg-soft: #12121a;
+  --text: #f6f6f6;
+  --muted: #b6b6b6;
+  --accent: #2f6dff;
+  --accent-soft: rgba(47, 109, 255, 0.2);
+  --border: rgba(255, 255, 255, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-manrope), system-ui, sans-serif;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.fade-text {
+  opacity: 0;
+  transform: translateY(8px);
+}
+
+.hero-overlay {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.62) 0%, rgba(0, 0, 0, 0.08) 55%, rgba(0, 0, 0, 0.55) 100%);
+}
+
+.loader-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+@media (max-width: 900px) {
+  .hero-overlay {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.25) 100%);
+  }
+}
