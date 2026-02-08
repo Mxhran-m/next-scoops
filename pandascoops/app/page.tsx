@@ -280,25 +280,35 @@ export default function Home() {
                 {String(displayIndex + 1).padStart(2, "0")}
               </div>
               <div className="flex flex-col items-center gap-3 text-[10px] uppercase tracking-[0.35em] max-sm:flex-row max-sm:items-center max-sm:gap-6">
-                <button onClick={() => switchVariant("prev")} className="flex items-center gap-2">
-                  <span>Prev</span>
-                  <span className="text-lg">?</span>
+                <button onClick={() => switchVariant("prev")} className="flex items-center text-lg cursor-pointer">
+                  <span className="text-lg">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="icon icon-tabler icons-tabler-outline icon-tabler-chevron-left"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15 6l-6 6l6 6" /></svg>
+                  </span>
+                   <span>Prev</span>
                 </button>
                 <div className="h-20 w-px bg-[var(--accent)] max-sm:h-px max-sm:w-16" />
-                <button onClick={() => switchVariant("next")} className="flex items-center gap-2">
+                <button onClick={() => switchVariant("next")} className="flex items-center text-lg cursor-pointer">
                   <span>Next</span>
-                  <span className="text-lg">?</span>
+                  <span className="text-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 6l6 6l-6 6" /></svg>
+                  </span>
                 </button>
-                <div className="text-[10px] uppercase tracking-[0.25em] text-white/50">
+                {/* <div className="text-[10px] uppercase tracking-[0.25em] text-white/50">
                   {loading ? "Loading..." : "Ready"}
-                </div>
+                </div> */}
               </div>
             </div>
 
             <div className="absolute bottom-8 left-1/2 flex -translate-x-1/2 gap-5 text-xs uppercase tracking-[0.35em] text-white/50">
-              <a href="#">X</a>
-              <a href="#">IG</a>
-              <a href="#">FB</a>
+              <a href="https://instagram.com/panda_scoops" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 8a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4l0 -8" /><path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /><path d="M16.5 7.5v.01" /></svg>
+              </a>
+              <a href="https://facebook.com/panda scoops" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="icon icon-tabler icons-tabler-outline icon-tabler-brand-facebook"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" /></svg>
+              </a>
+                <a href="https://youtube.com/panda_scoops" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="icon icon-tabler icons-tabler-outline icon-tabler-brand-youtube"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M2 8a4 4 0 0 1 4 -4h12a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-12a4 4 0 0 1 -4 -4v-8" /><path d="M10 9l5 3l-5 3l0 -6" /></svg>
+              </a>
             </div>
           </div>
         </div>

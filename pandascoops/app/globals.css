@@ -2,12 +2,15 @@
 
 :root {
   color-scheme: dark;
-  --bg: #0b0b0f;
-  --bg-soft: #12121a;
+  --bg: #0046ff;
+  --bg-soft: #0837b8;
   --text: #f6f6f6;
   --muted: #b6b6b6;
-  --accent: #2f6dff;
-  --accent-soft: rgba(47, 109, 255, 0.2);
+  --accent: #0046ff;
+  --accent-soft: rgba(0, 70, 255, 0.2);
+  --accent-light: #73c8d2;
+  --accent-cream: #f5f1dc;
+  --accent-warm: #ff9013;
   --border: rgba(255, 255, 255, 0.12);
 }
 

@@ -38,8 +38,8 @@ export default function Header() {
 
   return (
     <header
-      className={`sticky top-2 z-[80] rounded-full flex flex-wrap items-center justify-between gap-4 px-[6vw] py-4 backdrop-blur-xl bg-black/40 border-b border-white/10 transition-transform duration-300 ${
-        visible ? "translate-y-0" : "-translate-y-full"
+      className={`fixed top-4 left-0 right-0 z-[80] rounded-full flex flex-wrap items-center justify-between gap-4 px-[6vw] py-4 backdrop-blur-xl bg-white/10 border border-white/20 transition-transform duration-300 ${
+        visible ? "translate-y-0" : "-translate-y-100"
       }`}
     >
       <a
